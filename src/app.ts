@@ -3,7 +3,7 @@ import { EntryService } from './domain/entry/EntryService';
 import { EntryRepository } from './domain/entry/EntryRepository';
 import EntryRoutes from './routes/EntryRoutes';
 const app = express();
-const port = process.env.NODE_PORT || 3000;
+const port: string = process.env.NODE_PORT || '3000';
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

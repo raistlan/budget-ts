@@ -1,6 +1,6 @@
 export type Entry = {
-    cuid: string;
-    user_cuid: string;
+    id: string;
+    user_id: string;
     value: number;
     description: string;
     created_at: Date;
